@@ -1,226 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixed and Scrollable Columns</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/16e3e0b20f.js" crossorigin="anonymous"></script>
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed and Scrollable Columns</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/16e3e0b20f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+  <body class="bg-dark-ink">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <!-- Left column: full width on mobile, sidebar on lg+ -->
+        <aside
+          class="col-12 col-lg-5 col-xl-4 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
+        >
+          <div class="first-block">
+            <div class="name">Shiva Keerthan Jalla</div>
+            <br />
+            <div class="title">Data Scientist</div>
+            <br />
+            <div class="headline">[headline]</div>
 
-</head>
-<body>
-  <div class="fixed-column">
-    <div class="first-block">
-        <div class="name">
-            Shiva Keerthan Jalla 
-        </div>
-        <br/>
-        <div class="title">
-            Data Scientist
-        </div>
-        <br/>
-        <div class="headline">
-            [headline]
-        </div>
-
-        <br/>
-        <div class="resume">
-            View Full resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </div>
-        <br/>
-        <div class="hello">
-          <button type="button" class="btn btn-info"><a href="mailto:shivajalla1@gmail.com">Say Hello!</a></button>
-        </div>
-        <br/>
-        <div class="icons">
-          
-            <div class="row">
+            <br />
+            <div class="resume">
+              <a href="./Resume_SKJ.pdf"
+                >View Full Resume
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <br />
+            <div class="hello">
+              <button type="button" class="btn btn-info">
+                <a href="mailto:shivajalla1@gmail.com">Say Hello!</a>
+              </button>
+            </div>
+            <br />
+            <div class="icons">
+              <div class="row">
                 <div class="col-7">
-                  <a href="https://github.com/shivakeerthan"><i class="fab fa-github" style="color:rgb(148 163 184);font-size:2rem;"></i></a>
-                
-                    <a href="https://www.linkedin.com/in/shivakeerthan/"><i class="fab fa-linkedin" style="color:rgb(148 163 184);font-size:2rem;"></i></a>
-                
-                  <a href=""><i class="fab fa-twitter" style="color:rgb(148 163 184);font-size:2rem;"></i></a>
-                
-                  <a href=""><i class="fab fa-instagram" style="color:rgb(148 163 184);font-size:2rem;"></i></a>
+                  <a href="https://github.com/shivakeerthan"
+                    ><i
+                      class="fab fa-github"
+                      style="color: rgb(148 163 184); font-size: 2rem"
+                    ></i
+                  ></a>
+
+                  <a href="https://www.linkedin.com/in/shivakeerthan/"
+                    ><i
+                      class="fab fa-linkedin"
+                      style="color: rgb(148 163 184); font-size: 2rem"
+                    ></i
+                  ></a>
                 </div>
-                <div class="col">
+                <div class="col"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="col-12 col-lg-7 col-xl-8 bg-panel p-4">
+          <div class="second-block">
+            <div class="info">
+              <div class="info-title">ABOUT ME</div>
+              <br />
+              <div class="info-content">
+                Seeing ourselves in the turmoil we are in with the problems
+                mankind has created in the real world impacting the environment,
+                it is high time that we build sustainable solutions using Data
+                Science. I'm keen on harnessing the power of data science
+                technologies to solve real-world problems, which is reflected in
+                the projects I engage in and have worked on. I'm very excited to
+                work with the organizations that make the world a better place
+                to live in for future generations.
+              </div>
+              <br />
+              <br />
 
+              <div class="info-title">EXPERIENCE</div>
+              <br />
+              <div class="info-content">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
+                        June 2023 – Present
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Data Scientist II, Dell Technologies
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Lead machine learning initiatives supporting global
+                          services revenue operations by solving sales workflow
+                          challenges, partnering with cross regional leadership
+                          to align technical delivery with business impact.
+                          Contribute to enterprise-wide AI transformation by
+                          bridging model development with adoption strategy,
+                          ensuring technical outputs are integrated into
+                          decision-making processes across product and sales
+                          teams.
+                        </p>
+
+                        <!-- Large Language Models (LLMs) — Mixtral, LLaMA, Retrieval-Augmented Generation (RAG)
+
+LLM Pretraining Pipeline Development — corpus creation, structuring, tokenization
+
+Data Cleaning & Preparation for NLP — text normalization, deduplication, formatting
+
+Vector Databases — ChromaDB for semantic search and RAG workflows
+
+Time Series Forecasting — feature engineering, hyperparameter tuning
+
+Recommendation Systems — personalized content generation
+
+Real-time Monitoring & Alerting for ML Systems
+
+Product Analytics & Dashboard Development
+
+Python — Pandas, NumPy, Scikit-learn, LangChain, PyTorch/Hugging Face
+
+SQL for Data Extraction & Analysis
+
+Data Scraping & ETL Automation
+
+Cloud Platforms (AWS/Azure/GCP)
+
+Docker & CI/CD for ML Deployment -->
+<div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Large Language Models (LLMs)
+                        </button>
+                        <button type="button" class="btn btn-outline-info  m-1">
+                          Python
+                        </button>
+                        <button type="button" class="btn btn-outline-info  m-1">
+                          SQL
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Natural Language Processing (NLP)
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Recommendation Systems
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Vector Databases
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Docker & CI/CD
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Cloud Platforms (AWS/Azure/GCP)
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Data Scraping & ETL Automation
+                        </button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-  </div>
-  <div class="scrollable-column">
-    <div class="second-block">
-        <div class="info">
-            <div class="info-title">
-                ABOUT ME
-            </div>
-            <br/>
-            <div class="info-content">
-                Seeing ourselves in the turmoil we are in with the problems mankind has created in the real world impacting the environment, it is high time that we build sustainable solutions using Data Science. 
 
-                I'm keen on harnessing the power of data science technologies to solve real-world problems, which is reflected in the projects I engage in and have worked on. I'm very excited to work with the organizations that make the world a better place to live in for future generations.    
-            
-            </div>
-            <br/>
-            <br/>
+                <!-- Data Scientist Intern -->
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
+                        May 2022 – Aug 2022
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Data Scientist Intern, Dell Technologies
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Played a role in the foundational stage of a
+                          conversational AI initiative by structuring
+                          inaccessible internal knowledge into a format suitable
+                          for intelligent search and automated support.
+                          Collaborated with engineers and domain experts to
+                          improve system relevance and usability, focusing on
+                          early-stage model refinement laying the groundwork for
+                          future deployment scalability.
+                        </p>
+                        <div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="info-title">
-                EXPERIENCE
-            </div>
-            <br>
-            <div class="info-content">
-                <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">
-                            June 2023 – Present
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Data Scientist II, Dell Technologies</h5>
-                          <p class="card-text paragraph-color">[content]</p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Graduate Teaching Assistant – Mathematics for Data Models -->
-                  <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">                          
-                        Jan 2023 – May 2023
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Graduate Teaching Assistant – Mathematics for Data Models </h5>
-                          <p class="card-text paragraph-color">Led efforts in designing, solutioning, and grading exam papers focused on Mathematics, Data Science and ML concepts.</p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Graduate Teaching Assistant – Machine Learning and Data Mining -->
-                  <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">                          
-                         Sep 2022 – Dec 2022
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Graduate Teaching Assistant – Machine Learning and Data Mining</h5>
-                          <p class="card-text paragraph-color">Collaborated to designing and evaluating Machine Learning assignments and hosted over 170 office hours for 60 students. </p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Data Scientist Intern -->
-                  <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">                          
-                            May 2022 – Aug 2022
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Data Scientist Intern, Dell Technologies</h5>
-                          <p class="card-text paragraph-color">
-                            [content] </p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Graduate Teaching Assistant – Intermediate Programming with Data -->
-                  <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">                          
-                        Jan 2022 – May 2022
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Graduate Teaching Assistant – Intermediate Programming with Data</h5>
-                          <p class="card-text paragraph-color">
-                            Managed programming labs, graded programming with data assignments, and conducted office hours for 150 students. </p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Accenture Solutions Pvt Ltd, Mumbai, India -->
-                  <div class="card mb-3" style="max-width: 630px;background-color: rgb(24, 18, 50);">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <div class="year paragraph-color">                                       
+                <!-- Accenture Solutions Pvt Ltd, Mumbai, India -->
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
                         Oct 2020 – July 2021
-                        </div>
-                        
                       </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240);">Data Engineer, Accenture Solutions Pvt Ltd</h5>
-                          <p class="card-text paragraph-color">
-                            [content]</p>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          <button type="button" class="btn btn-outline-info">Info</button>
-                          
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Data Engineer, Accenture Solutions Pvt Ltd
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Led technical execution of advertising campaign data
+                          migration and transformation efforts during a cloud
+                          modernization engagement for a Fortune 500 energy
+                          client, owning the movement of heterogeneous datasets
+                          into a centralized analytics environment. Collaborated
+                          with data scientists, marketers, and CRM stakeholders
+                          to ensure pipeline design supported use cases,
+                          including campaign optimization and ML modeling
+                          readiness.
+                        </p>
+                        <div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <!-- Graduate Teaching Assistant – Mathematics for Data Models -->
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
+                        Jan 2023 – May 2023
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Graduate Teaching Assistant – Mathematics for Data
+                          Models
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Led efforts in designing, solutioning, and grading
+                          exam papers focused on Mathematics, Data Science and
+                          ML concepts.
+                        </p>
+                        <div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Graduate Teaching Assistant – Intermediate Programming with Data -->
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
+                        Jan 2022 – May 2022
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Graduate Teaching Assistant – Intermediate Programming
+                          with Data
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Managed programming labs, graded programming with data
+                          assignments, and conducted office hours for 150
+                          students.
+                        </p>
+                        <div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Graduate Teaching Assistant – Machine Learning and Data Mining -->
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <div class="year paragraph-color">
+                        Sep 2022 – Dec 2022
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(226 232 240)">
+                          Graduate Teaching Assistant – Machine Learning and
+                          Data Mining
+                        </h5>
+                        <p class="card-text paragraph-color">
+                          Collaborated to designing and evaluating Machine
+                          Learning assignments and hosted over 170 office hours
+                          for 60 students.
+                        </p>
+                        <div class="skills">
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                       
+                        <button type="button" class="btn btn-outline-info m-1">
+                          Info
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </main>
+      </div>
     </div>
-</div>
-
-
-                
-
-</body>
+  </body>
 </html>
-
