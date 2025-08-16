@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    
+  }
+  .fixed-column {
+    width: 154%; /* Set the width of the fixed column */
+    padding: 20px;
+    background-color:rgb(24, 18, 50);
+  }
+  .scrollable-column {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color:rgb(24, 18, 50);
+  }
+.name{
+    /* for paragraphs color: rgb(148 163 184);*/
+    color: rgb(226 232 240);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.year{
+    margin-top: 9%;
+    margin-left: 5%;
+}
+.title{
+    color: rgb(226 232 240);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.resume{
+    color: rgb(226 232 240);
+}
+.headline{
+    color: rgb(148 163 184);
+    font-size:1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.paragraph-color{
+    color: rgb(148 163 184);
+}
+.whitish-color{
+    color: rgb(226 232 240);
+}
+.info-title{
+    color: rgb(226 232 240);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info{
+    margin-top: -3%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+.info-content{
+    color: rgb(148 163 184);
+}
+.first-block{
+    margin-left: 8%;
+    margin-top: 14%;
+    
+}
+.second-block{
+    margin-left: 3%;
+    margin-top: 14%;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+
+}
+a i{
+    text-decoration: none;
+    padding: 5%;
+}
