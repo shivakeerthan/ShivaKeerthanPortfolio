@@ -16,12 +16,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
-      crossorigin="anonymous"
-    />
     <script
       src="https://kit.fontawesome.com/16e3e0b20f.js"
       crossorigin="anonymous"
@@ -38,7 +32,7 @@
   </head>
   <body class="bg-dark-ink">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
       <div class="container-fluid px-3">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <span class="logo-dot me-2"></span>
@@ -63,368 +57,286 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row g-0">
-        <!-- Left column: full width on mobile, sidebar on lg+ -->
-        <aside
-          class="col-3 col-lg-3 col-xl-2 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
-        >
-          <div class="first-block">
-            <div class="name">Shiva Keerthan Jalla</div>
-            <br />
-            <div class="title">Data Scientist</div>
+    <div>
+      <!-- Sidebar (hidden on mobile, shown on desktop) -->
+      <aside class="sidebar d-none d-lg-block">
+        <div class="sidebar-content">
+          <div class="name">Shiva Keerthan Jalla</div>
+          <div class="title mt-3">Data Scientist</div>
 
-            <div class="resume">
-              <a href="./Resume_SKJ.pdf"
-                >View Full Resume
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <br />
-            <div class="hello">
-              <button type="button" class="btn btn-info">
-                <a href="mailto:shivajalla1@gmail.com">Say Hello!</a>
-              </button>
-            </div>
-            <br />
-            <div class="icons">
-              <div class="row">
-                <div class="col-7">
-                  <a href="https://github.com/shivakeerthan"
-                    ><i
-                      class="fab fa-github"
-                      style="color: rgb(148 163 184); font-size: 2rem"
-                    ></i
-                  ></a>
-
-                  <a href="https://www.linkedin.com/in/shivakeerthan/"
-                    ><i
-                      class="fab fa-linkedin"
-                      style="color: rgb(148 163 184); font-size: 2rem"
-                    ></i
-                  ></a>
-                </div>
-                <div class="col"></div>
-              </div>
-            </div>
+          <div class="resume mt-4">
+            <a href="./Resume_SKJ.pdf">
+              View Full Resume
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-        </aside>
-        <main class="col-9 col-lg-10 col-xl-10 bg-panel p-6">
+
+          <div class="mt-4">
+            <button type="button" class="btn contact-btn">
+              <a href="mailto:shivajalla1@gmail.com">Say Hello!</a>
+            </button>
+          </div>
+
+          <div class="social-icons mt-4 d-flex">
+            <a href="https://github.com/shivakeerthan" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivakeerthan/" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main-content">
+        <!-- Mobile header (shown only on mobile) -->
+        <div class="d-lg-none text-center mb-4">
+          <div class="name">Shiva Keerthan Jalla</div>
+          <div class="title mt-2">Data Scientist</div>
           
-          <div class="second-block">
-            <div class="info">
-              <div class="info-title">ABOUT ME</div>
-              <br />
-              <div class="info-content">
-                Loading.....
+          <div class="social-icons mt-3 d-flex justify-content-center">
+            <a href="https://github.com/shivakeerthan" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivakeerthan/" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          
+          <div class="mt-3">
+            <button type="button" class="btn contact-btn">
+              <a href="mailto:shivajalla1@gmail.com">Say Hello!</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+          <div class="info-title">ABOUT ME</div>
+          <div class="info-content loading">
+            Loading.....
+          </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="section">
+          <div class="info-title">WORK EXPERIENCE</div>
+          <div class="experience-grid">
+            <!-- Current Role -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">June 2023 – Present</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Scientist II, Dell Technologies</h5>
+                    <p class="card-text paragraph-color">
+                      Lead machine learning projects improving sales and revenue operations by reducing manual workflows and surfacing actionable insights.
+                      <br><br>
+                      Built and deployed NLP and retrieval-augmented generation (RAG) solutions with LLaMA and Mixtral, accelerating knowledge discovery for sales reps.
+                      <br><br>
+                      Designed time-series forecasting models to optimize service demand planning, and built recommendation systems for product adoption.
+                      <br><br>
+                      Partnered with leadership to ensure adoption of models into business workflows, driving measurable improvements in pipeline efficiency and global sales strategy.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Large Language Models (LLMs)</button>
+                      <button type="button" class="btn btn-outline-info">Python</button>
+                      <button type="button" class="btn btn-outline-info">SQL</button>
+                      <button type="button" class="btn btn-outline-info">Natural Language Processing (NLP)</button>
+                      <button type="button" class="btn btn-outline-info">Recommendation Systems</button>
+                      <button type="button" class="btn btn-outline-info">Vector Databases</button>
+                      <button type="button" class="btn btn-outline-info">Docker & CI/CD</button>
+                      <button type="button" class="btn btn-outline-info">Cloud Platforms (AWS/Azure/GCP)</button>
+                      <button type="button" class="btn btn-outline-info">Data Scraping & ETL Automation</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <br />
-              <br />
+            </div>
 
-              <div class="info-title">WORK EXPERIENCE</div>
-              <br />
-              <div class="info-content">
-                <div class="card mb-4">
-                  <div class="row g-0">
-                    <div class="col-md-3">
-                      <div class="year paragraph-color">
-                        June 2023 – Present
-                      </div>
-                    </div>
-                    <div class="col-md-9">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: rgb(226 232 240)">
-                          Data Scientist II, Dell Technologies
-                        </h5>
-                        <p class="card-text paragraph-color">
-                          
-                          Lead machine learning projects improving sales and revenue operations by reducing manual workflows and surfacing actionable insights.
-                        </br>
-                      </br>
-                          Built and deployed NLP and retrieval-augmented generation (RAG) solutions with LLaMA and Mixtral, accelerating knowledge discovery for sales reps.
-                        </br>
-                      </br>
-                          Designed time-series forecasting models to optimize service demand planning, and built recommendation systems for product adoption.
-                        </br>
-                      </br>
-                          Partnered with leadership to ensure adoption of models into business workflows, driving measurable improvements in pipeline efficiency and global sales strategy.
-                        </br>
-                      </br>
-                        </p>
-                        <div class="skills">
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Large Language Models (LLMs)
-                        </button>
-                        <button type="button" class="btn btn-outline-info  m-1">
-                          Python
-                        </button>
-                        <button type="button" class="btn btn-outline-info  m-1">
-                          SQL
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Natural Language Processing (NLP)
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Recommendation Systems
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Vector Databases
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Docker & CI/CD
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Cloud Platforms (AWS/Azure/GCP)
-                        </button>
-                        <button type="button" class="btn btn-outline-info m-1">
-                          Data Scraping & ETL Automation
-                        </button>
-                      </div>
-                      </div>
+            <!-- Internship -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">May 2022 – Aug 2022</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Scientist Intern, Dell Technologies</h5>
+                    <p class="card-text paragraph-color">
+                      Played a role in the foundational stage of a conversational AI initiative by structuring inaccessible large scale enterprise data into a format suitable for intelligent search and automated support.
+                      <br><br>
+                      Prepared and preprocessed large internal datasets (cleaning, structuring, tokenizing) to support chatbot training and model experimentation.
+                      <br><br>
+                      Collaborated with engineers and domain experts to improve system relevance and usability, focusing on early-stage model refinement laying the groundwork for future deployment scalability.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Natural Language Processing (NLP)</button>
+                      <button type="button" class="btn btn-outline-info">Transformer Model Training & Customization</button>
+                      <button type="button" class="btn btn-outline-info">Vector Databases & Similarity Search</button>
+                      <button type="button" class="btn btn-outline-info">Conversational AI Development</button>
+                      <button type="button" class="btn btn-outline-info">Enterprise Data Engineering for AI</button>
                     </div>
                   </div>
                 </div>
-                <div class="info-content">
-                  <div class="card mb-4">
-                    <div class="row g-0">
-                      <div class="col-md-3">
-                        <div class="year paragraph-color">
-                          May 2022 – Aug 2022
-                        </div>
-                      </div>
-                      <div class="col-md-9">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color: rgb(226 232 240)">
-                            Data Scientist Intern, Dell Technologies
-                          </h5>
-                          <p class="card-text paragraph-color">
-                            
-                          Played a role in the foundational stage of a conversational AI initiative by structuring inaccessible large scale enterprise data into a format
-                            suitable for intelligent search and automated support. 
-                        </br>
-                      </br>
-                        Prepared and preprocessed large internal datasets (cleaning, structuring, tokenizing) to support chatbot training and model experimentation.                          </br>
-                        </br>
-                        Collaborated with engineers and domain experts to improve system relevance and
-                        usability, focusing on early-stage model refinement laying the groundwork for future deployment scalability.
+              </div>
+            </div>
 
-                        </br>
-                          </p>
-                          <div class="skills">
-                          <button type="button" class="btn btn-outline-info m-1">
-                            Natural Language Processing (NLP)
-                          </button>
-                          <button type="button" class="btn btn-outline-info  m-1">
-                            Transformer Model Training & Customization
-                          </button>
-                          <button type="button" class="btn btn-outline-info  m-1">
-                            Vector Databases & Similarity Search
-                          </button>
-                          <button type="button" class="btn btn-outline-info m-1">
-                            Conversational AI Development
-                          </button>
-                          <button type="button" class="btn btn-outline-info m-1">
-                            Enterprise Data Engineering for AI
-                          </button>
-                          <button type="button" class="btn btn-outline-info m-1">
-                            Vector Databases
-                          </button>
-                          
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="info-content">
-                    <div class="card mb-4">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">
-                            Oct 2020 – July 2021
-                          </div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              Data Engineer, Accenture
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              
-                              Led technical execution of advertising campaign data migration and transformation efforts during a cloud modernization engagement for a Fortune
-                              500 energy client, owning the movement of heterogeneous datasets into a centralized analytics environment. 
-                              </br>
-                            </br>
-                            Collaborated with data scientists,
-                    marketers, and CRM stakeholders to ensure pipeline design supported use cases, including campaign optimization and ML modeling readiness.
-                          </br>
-                            </p>
-                            <div class="skills">
-                            <button type="button" class="btn btn-outline-info m-1">
-                              Cloud Data Engineering
-                            </button>
-                            <button type="button" class="btn btn-outline-info  m-1">
-                              ETL Pipeline Design & Reusable Frameworks
-                            </button>
-                            <button type="button" class="btn btn-outline-info  m-1">
-                              Data Modeling & Performance Optimization
-                            </button>
-                            <button type="button" class="btn btn-outline-info m-1">
-                              Advertising & Marketing Analytics
-                            </button>
-                            <button type="button" class="btn btn-outline-info m-1">
-                              Business Intelligence & Visualization
-                            </button>
-                            
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- ACADEMIC WORK EXPERIENCE -->
-                  
-                  <br />
-                  <div class="info-title">ACADEMIC WORK EXPERIENCE</div>
-                  <br />
-                  <div class="info-content academic-experience">
-
-                    <!-- GTA - Mathematics for Data Models -->
-                    <div class="card mb-4 academic-exp-card">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">Jan 2023 - May 2023</div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              Graduate Teaching Assistant - Mathematics for Data Models, Northeastern University
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              Designed and graded assessments covering linear algebra, probability, and optimization for data science. 
-                              Ran weekly office hours and reviews for 150 students, improving clarity on model math and exam readiness.
-                              Built reusable Python and LaTeX materials to demonstrate matrix factorization, regression diagnostics, and gradient methods.
-                            </p>
-                            <div class="skills">
-                              <button type="button" class="btn btn-outline-info m-1">Linear Algebra</button>
-                              <button type="button" class="btn btn-outline-info m-1">Probability</button>
-                              <button type="button" class="btn btn-outline-info m-1">Optimization</button>
-                              <button type="button" class="btn btn-outline-info m-1">Python</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- GTA - Machine Learning and Data Mining -->
-                    <div class="card mb-4 academic-exp-card">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">Sep 2022 - Dec 2022</div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              Graduate Teaching Assistant - Machine Learning and Data Mining
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              Co-designed labs and assignments for supervised and unsupervised learning, feature engineering, and model evaluation. 
-                              Hosted 170+ hours of support for 60 students, troubleshooting pipelines and explaining tradeoffs in metrics and tuning.
-                            </p>
-                            <div class="skills">
-                              <button type="button" class="btn btn-outline-info m-1">Scikit-learn</button>
-                              <button type="button" class="btn btn-outline-info m-1">Feature Engineering</button>
-                              <button type="button" class="btn btn-outline-info m-1">Model Evaluation</button>
-                              <button type="button" class="btn btn-outline-info m-1">Cross Validation</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- GTA - Intermediate Programming with Data -->
-                    <div class="card mb-4 academic-exp-card">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">Jan 2022 - May 2022</div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              Graduate Teaching Assistant - Intermediate Programming with Data
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              Led programming labs for 150 students on data wrangling, analysis, and visualization. 
-                              Reviewed code for clarity and performance, and mentored students on testing and documentation.
-                            </p>
-                            <div class="skills">
-                              <button type="button" class="btn btn-outline-info m-1">Pandas</button>
-                              <button type="button" class="btn btn-outline-info m-1">Data Wrangling</button>
-                              <button type="button" class="btn btn-outline-info m-1">Visualization</button>
-                              <button type="button" class="btn btn-outline-info m-1">Testing</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <!-- ACADEMICS -->
-                  <br />
-                  <div class="info-title">ACADEMICS</div>
-                  <br />
-                  <div class="info-content academics">
-                    <!-- Masters -->
-                    <div class="card mb-4 academic-card">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">Aug 2021 - May 2023</div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              M.S. in Data Science, Northeastern University, Boston
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              Coursework: Machine Learning, NLP, Deep Learning, Statistics, Data Mining, Cloud Data Engineering.
-                              
-                            </p>
-                            
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Bachelors -->
-                    <div class="card mb-4 academic-card">
-                      <div class="row g-0">
-                        <div class="col-md-3">
-                          <div class="year paragraph-color">Aug 2016 - May 2020</div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="card-body">
-                            <h5 class="card-title" style="color: rgb(226 232 240)">
-                              B.Tech. in Information Technology, Sreenidhi Institute of Science and Technology
-                            </h5>
-                            <p class="card-text paragraph-color">
-                              Coursework: Data Structures, Algorithms, Databases, Distributed Systems, Probability and Statistics.
-                              <br /><br />
-                              
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+            <!-- Accenture -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Oct 2020 – July 2021</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Engineer, Accenture</h5>
+                    <p class="card-text paragraph-color">
+                      Led technical execution of advertising campaign data migration and transformation efforts during a cloud modernization engagement for a Fortune 500 energy client, owning the movement of heterogeneous datasets into a centralized analytics environment.
+                      <br><br>
+                      Collaborated with data scientists, marketers, and CRM stakeholders to ensure pipeline design supported use cases, including campaign optimization and ML modeling readiness.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Cloud Data Engineering</button>
+                      <button type="button" class="btn btn-outline-info">ETL Pipeline Design & Reusable Frameworks</button>
+                      <button type="button" class="btn btn-outline-info">Data Modeling & Performance Optimization</button>
+                      <button type="button" class="btn btn-outline-info">Advertising & Marketing Analytics</button>
+                      <button type="button" class="btn btn-outline-info">Business Intelligence & Visualization</button>
                     </div>
                   </div>
                 </div>
-             </div>
+              </div>
             </div>
           </div>
-        </main>
-      </div>
+        </section>
+
+        <!-- Academic Work Experience -->
+        <section id="academic-work" class="section">
+          <div class="info-title">ACADEMIC WORK EXPERIENCE</div>
+          <div class="experience-grid">
+            <!-- GTA - Mathematics for Data Models -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Jan 2023 - May 2023</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Graduate Teaching Assistant - Mathematics for Data Models, Northeastern University</h5>
+                    <p class="card-text paragraph-color">
+                      Designed and graded assessments covering linear algebra, probability, and optimization for data science. 
+                      Ran weekly office hours and reviews for 150 students, improving clarity on model math and exam readiness.
+                      Built reusable Python and LaTeX materials to demonstrate matrix factorization, regression diagnostics, and gradient methods.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Linear Algebra</button>
+                      <button type="button" class="btn btn-outline-info">Probability</button>
+                      <button type="button" class="btn btn-outline-info">Optimization</button>
+                      <button type="button" class="btn btn-outline-info">Python</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GTA - Machine Learning and Data Mining -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Sep 2022 - Dec 2022</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Graduate Teaching Assistant - Machine Learning and Data Mining</h5>
+                    <p class="card-text paragraph-color">
+                      Co-designed labs and assignments for supervised and unsupervised learning, feature engineering, and model evaluation. 
+                      Hosted 170+ hours of support for 60 students, troubleshooting pipelines and explaining tradeoffs in metrics and tuning.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Scikit-learn</button>
+                      <button type="button" class="btn btn-outline-info">Feature Engineering</button>
+                      <button type="button" class="btn btn-outline-info">Model Evaluation</button>
+                      <button type="button" class="btn btn-outline-info">Cross Validation</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GTA - Intermediate Programming with Data -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Jan 2022 - May 2022</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Graduate Teaching Assistant - Intermediate Programming with Data</h5>
+                    <p class="card-text paragraph-color">
+                      Led programming labs for 150 students on data wrangling, analysis, and visualization. 
+                      Reviewed code for clarity and performance, and mentored students on testing and documentation.
+                    </p>
+                    <div class="skills">
+                      <button type="button" class="btn btn-outline-info">Pandas</button>
+                      <button type="button" class="btn btn-outline-info">Data Wrangling</button>
+                      <button type="button" class="btn btn-outline-info">Visualization</button>
+                      <button type="button" class="btn btn-outline-info">Testing</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Academics -->
+        <section id="academics" class="section">
+          <div class="info-title">ACADEMICS</div>
+          <div class="experience-grid">
+            <!-- Masters -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Aug 2021 - May 2023</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">M.S. in Data Science, Northeastern University, Boston</h5>
+                    <p class="card-text paragraph-color">
+                      Coursework: Machine Learning, NLP, Deep Learning, Statistics, Data Mining, Cloud Data Engineering.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bachelors -->
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-lg-3 col-12">
+                  <div class="year p-3">Aug 2016 - May 2020</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="card-body">
+                    <h5 class="card-title">B.Tech. in Information Technology, Sreenidhi Institute of Science and Technology</h5>
+                    <p class="card-text paragraph-color">
+                      Coursework: Data Structures, Algorithms, Databases, Distributed Systems, Probability and Statistics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        // Navigation active state
         const links = document.querySelectorAll('.site-header .nav-link[href^="#"]');
         const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
       
@@ -437,8 +349,36 @@
       
         window.addEventListener('scroll', setActive, { passive: true });
         setActive();
+
+        // Smooth scrolling for navigation links
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+              const offset = 100;
+              const targetPosition = targetSection.offsetTop - offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+              navbarCollapse.classList.remove('show');
+            }
+          });
+        });
       });
-      </script>
-      
+    </script>
   </body>
 </html>
