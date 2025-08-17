@@ -37,11 +37,37 @@
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body class="bg-dark-ink">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-header">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <span class="logo-dot me-2"></span>
+          <span>Shiva Keerthan Jalla</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="topNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#academic-work">Academic Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-info btn-sm" href="./Resume_SKJ.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container-fluid">
       <div class="row g-0">
         <!-- Left column: full width on mobile, sidebar on lg+ -->
         <aside
-          class="col-12 col-lg-4 col-xl-3 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
+          class="col-11 col-lg-3 col-xl-2 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
         >
           <div class="first-block">
             <div class="name">Shiva Keerthan Jalla</div>
@@ -83,7 +109,7 @@
             </div>
           </div>
         </aside>
-        <main class="col-13 col-lg-9 col-xl-9 bg-panel p-6">
+        <main class="col-14 col-lg-10 col-xl-10 bg-panel p-6">
           
           <div class="second-block">
             <div class="info">
@@ -255,6 +281,94 @@
                       </div>
                     </div>
                   </div>
+                  <!-- ACADEMIC WORK EXPERIENCE -->
+                  
+                  <br />
+                  <div class="info-title">ACADEMIC WORK EXPERIENCE</div>
+                  <br />
+                  <div class="info-content academic-experience">
+
+                    <!-- GTA - Mathematics for Data Models -->
+                    <div class="card mb-4 academic-exp-card">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <div class="year paragraph-color">Jan 2023 - May 2023</div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(226 232 240)">
+                              Graduate Teaching Assistant - Mathematics for Data Models, Northeastern University
+                            </h5>
+                            <p class="card-text paragraph-color">
+                              Designed and graded assessments covering linear algebra, probability, and optimization for data science. 
+                              Ran weekly office hours and reviews for 150 students, improving clarity on model math and exam readiness.
+                              Built reusable Python and LaTeX materials to demonstrate matrix factorization, regression diagnostics, and gradient methods.
+                            </p>
+                            <div class="skills">
+                              <button type="button" class="btn btn-outline-info m-1">Linear Algebra</button>
+                              <button type="button" class="btn btn-outline-info m-1">Probability</button>
+                              <button type="button" class="btn btn-outline-info m-1">Optimization</button>
+                              <button type="button" class="btn btn-outline-info m-1">Python</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- GTA - Machine Learning and Data Mining -->
+                    <div class="card mb-4 academic-exp-card">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <div class="year paragraph-color">Sep 2022 - Dec 2022</div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(226 232 240)">
+                              Graduate Teaching Assistant - Machine Learning and Data Mining
+                            </h5>
+                            <p class="card-text paragraph-color">
+                              Co-designed labs and assignments for supervised and unsupervised learning, feature engineering, and model evaluation. 
+                              Hosted 170+ hours of support for 60 students, troubleshooting pipelines and explaining tradeoffs in metrics and tuning.
+                            </p>
+                            <div class="skills">
+                              <button type="button" class="btn btn-outline-info m-1">Scikit-learn</button>
+                              <button type="button" class="btn btn-outline-info m-1">Feature Engineering</button>
+                              <button type="button" class="btn btn-outline-info m-1">Model Evaluation</button>
+                              <button type="button" class="btn btn-outline-info m-1">Cross Validation</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- GTA - Intermediate Programming with Data -->
+                    <div class="card mb-4 academic-exp-card">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <div class="year paragraph-color">Jan 2022 - May 2022</div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(226 232 240)">
+                              Graduate Teaching Assistant - Intermediate Programming with Data
+                            </h5>
+                            <p class="card-text paragraph-color">
+                              Led programming labs for 150 students on data wrangling, analysis, and visualization. 
+                              Reviewed code for clarity and performance, and mentored students on testing and documentation.
+                            </p>
+                            <div class="skills">
+                              <button type="button" class="btn btn-outline-info m-1">Pandas</button>
+                              <button type="button" class="btn btn-outline-info m-1">Data Wrangling</button>
+                              <button type="button" class="btn btn-outline-info m-1">Visualization</button>
+                              <button type="button" class="btn btn-outline-info m-1">Testing</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
                   <!-- ACADEMICS -->
                   <br />
                   <div class="info-title">ACADEMICS</div>

@@ -15,7 +15,7 @@ body { margin: 0; color: var(--text-strong); }
 /* Typography */
 .name{
   color: var(--text-strong);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,8 +50,8 @@ body { margin: 0; color: var(--text-strong); }
 }
 
 
-.first-block{ margin-left: 4%; margin-top: 6%; }
-.second-block{ margin-left: 2%; margin-top: 6%; }
+.first-block{ margin-left: 5%; margin-top: 10%; }
+.second-block{ margin-left: 7%; margin-top: 6%; margin-right: 3%;}
 .info{ margin-top: -1%; margin-left: 2%; margin-right: 5%; }
 .year{ margin-top: 9%; margin-left: 5%; }
 
@@ -78,7 +78,7 @@ a i{ text-decoration: none; padding: 5%; }
 @media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
   .first-block, .second-block { margin: 0; }
   .year{ margin: 0.5rem 0 0 0; }
-  .name{ font-size: 2rem; }
+  .name{ font-size: 1rem; }
 }
 
 /* Let the main content stretch */
