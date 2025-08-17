@@ -112,3 +112,13 @@ a i{ text-decoration: none; padding: 5%; }
 
 /* Optional: reduce extra inner padding if it makes it feel “narrow” */
 .card-body { padding-right: 2rem; }
+.hover-green {
+  transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s;
+}
+.hover-green:hover,
+.hover-green:focus {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(34, 197, 94, .25);
+}
