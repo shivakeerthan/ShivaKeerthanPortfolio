@@ -3,122 +3,420 @@
   --text-strong: rgb(226, 232, 240);
   --text-muted: rgb(148, 163, 184);
 }
+
 .bg-dark-ink { background: #0b1022; }
 .bg-panel { background: var(--ink); }
 
-
-body { margin: 0; color: var(--text-strong); }
-.fixed-column, .scrollable-column { /* keep for backward compatibility if used in HTML */
-  background-color: var(--ink);
+body { 
+  margin: 0; 
+  color: var(--text-strong); 
+  overflow-x: hidden;
 }
 
 /* Typography */
-.name{
+.name {
   color: var(--text-strong);
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.title{
+
+.title {
   color: var(--text-strong);
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.headline{ color: var(--text-muted); font-size: 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-.paragraph-color{ color: var(--text-muted); }
-.whitish-color{ color: var(--text-strong); }
-.info-title{
+
+.info-title {
   color: var(--text-strong);
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
 }
-.info-content{
-     color: rgb(148 163 184);
-}
-.resume{
-     color: rgb(226 232 240);
-}
-.resume a{
+
+.paragraph-color { color: var(--text-muted); }
+.info-content { color: rgb(148 163 184); }
+
+.resume a {
   text-decoration: none;
   color: var(--text-strong);
   font-weight: 500;
 }
 
+/* Navigation */
+.site-header {
+  background: var(--ink);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 
-.first-block{ margin-left: 5%; margin-top: 10%; }
-.second-block{ margin-left: 7%; margin-top: 6%; margin-right: 3%;}
-.info{ margin-top: -1%; margin-left: 2%; margin-right: 5%; }
-.year{ margin-top: 9%; margin-left: 5%; }
+.navbar-brand {
+  font-weight: 600;
+}
 
-/* Links and buttons */
-.resume{ color: var(--text-strong); }
-button a{ text-decoration: none; color: black; }
-a i{ text-decoration: none; padding: 5%; }
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  background: #0dcaf0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--ink);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  min-height: 100vh;
+}
+
+.sidebar-content {
+  padding: 2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Main content */
+.main-content {
+  background: var(--ink);
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+}
 
 /* Cards */
-.card{
+.card {
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: .5rem;
-  max-width: 700px !important; 
-  background-color: rgb(24, 18, 50) !important;
-}
-.card-text, .info-content{
-    text-align: justify;
-}
-.skills{
-    text-align:left;
+  border-radius: 0.75rem;
+  background-color: rgba(255,255,255,0.02) !important;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* ----- Responsive adjustments ----- */
-@media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
-  .first-block, .second-block { margin: 0; }
-  .year{ margin: 0.5rem 0 0 0; }
-  .name{ font-size: 1rem; }
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* Let the main content stretch */
-.second-block .info,
-.second-block .info .info-content {
-  max-width: none !important;
-  width: 100% !important;
-  margin: 0 !important;            /* remove auto-centering */
+.card-title {
+  color: var(--text-strong);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-/* Make each card use full line width */
-.info-content .card {
-  max-width: none !important;
-  width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+.card-text {
+  text-align: justify;
+  line-height: 1.6;
 }
 
-/* Inside the card, keep the year narrow and text wide */
-.card .col-md-3 { flex: 0 0 18%; max-width: 18%; }
-.card .col-md-9 { flex: 0 0 82%; max-width: 82%; }
+/* Skills badges */
+.skills .btn {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.2rem;
+  border-radius: 20px;
+}
 
-/* On small screens, stack nicely */
-@media (max-width: 767.98px) {
-  .card .col-md-3,
-  .card .col-md-9 {
-    flex: 0 0 100%;
-    max-width: 100%;
+/* Year column */
+.year {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Social icons */
+.social-icons a {
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #0dcaf0;
+}
+
+/* Contact button */
+.contact-btn {
+  background: linear-gradient(45deg, #0dcaf0, #0a8fc7);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 202, 240, 0.3);
+}
+
+.contact-btn a {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mobile-first responsive design */
+
+/* Mobile phones (up to 575px) */
+@media (max-width: 575.98px) {
+  .name {
+    font-size: 1.8rem;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .info-title {
+    font-size: 1.3rem;
+  }
+  
+  .sidebar-content {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .skills .btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    margin: 0.15rem;
+  }
+  
+  .social-icons {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .year {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 
-/* Optional: reduce extra inner padding if it makes it feel “narrow” */
-.card-body { padding-right: 2rem; }
+/* Tablets (576px to 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .name {
+    font-size: 2.2rem;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .sidebar-content {
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 2rem 1.25rem;
+  }
+  
+  .social-icons {
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+}
+
+/* Desktop and larger tablets (992px and up) */
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 76px);
+    z-index: 1000;
+  }
+  
+  .main-content {
+    margin-left: 300px;
+    padding: 2rem 3rem;
+  }
+  
+  .year {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 350px;
+  }
+  
+  .main-content {
+    margin-left: 350px;
+    padding: 2rem 4rem;
+  }
+  
+  .name {
+    font-size: 2.8rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Navbar adjustments for mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .nav-link {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+  
+  .navbar .btn {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+/* Section spacing */
+.section {
+  margin-bottom: 3rem;
+}
+
+/* Loading animation */
+.loading {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: #0dcaf0 !important;
+}
+
+/* Card grid improvements */
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Legacy compatibility classes */
+.fixed-column, .scrollable-column {
+  background-color: var(--ink);
+}
+
+.headline { 
+  color: var(--text-muted); 
+  font-size: 1rem; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.whitish-color { 
+  color: var(--text-strong); 
+}
+
+.resume { 
+  color: var(--text-strong); 
+}
+
+button a { 
+  text-decoration: none; 
+  color: black; 
+}
+
+a i { 
+  text-decoration: none; 
+  padding: 5%; 
+}
+
+.skills {
+  text-align: left;
+}
+
 .hover-green {
   transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s;
 }
+
 .hover-green:hover,
 .hover-green:focus {
   background-color: #22c55e;
   border-color: #22c55e;
   color: #fff;
   box-shadow: 0 0 0 .25rem rgba(34, 197, 94, .25);
+}
+
+/* Print styles */
+@media print {
+  .sidebar,
+  .site-header {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  
+  .card {
+    break-inside: avoid;
+    border: 1px solid #ccc;
+    background: white !important;
+  }
+  
+  body {
+    color: black;
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 767.98px) {
+  .card .col-lg-3,
+  .card .col-lg-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .card-body {
+    padding-right: 1rem;
+  }
+}
+
+/* Ensure proper card layout on all screen sizes */
+.card .col-lg-3 { 
+  flex: 0 0 18%; 
+  max-width: 18%; 
+}
+
+.card .col-lg-9 { 
+  flex: 0 0 82%; 
+  max-width: 82%; 
+}
+
+/* Small screen adjustments */
+@media (max-width: 767.98px) {
+  .card .col-lg-3,
+  .card .col-lg-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

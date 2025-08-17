@@ -67,7 +67,7 @@
       <div class="row g-0">
         <!-- Left column: full width on mobile, sidebar on lg+ -->
         <aside
-          class="col-11 col-lg-3 col-xl-2 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
+          class="col-3 col-lg-3 col-xl-2 bg-panel text-light p-4 sticky-lg-top vh-lg-100 overflow-lg-auto"
         >
           <div class="first-block">
             <div class="name">Shiva Keerthan Jalla</div>
@@ -109,7 +109,7 @@
             </div>
           </div>
         </aside>
-        <main class="col-14 col-lg-10 col-xl-10 bg-panel p-6">
+        <main class="col-9 col-lg-10 col-xl-10 bg-panel p-6">
           
           <div class="second-block">
             <div class="info">
@@ -423,5 +423,22 @@
         </main>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.site-header .nav-link[href^="#"]');
+        const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      
+        const setActive = () => {
+          const y = window.scrollY + 120;
+          let current = sections[0];
+          for (const s of sections) if (s.offsetTop <= y) current = s;
+          links.forEach(a => a.classList.toggle('active', current && a.getAttribute('href') === '#' + current.id));
+        };
+      
+        window.addEventListener('scroll', setActive, { passive: true });
+        setActive();
+      });
+      </script>
+      
   </body>
 </html>
