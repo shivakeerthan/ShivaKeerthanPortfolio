@@ -80,3 +80,35 @@ a i{ text-decoration: none; padding: 5%; }
   .year{ margin: 0.5rem 0 0 0; }
   .name{ font-size: 2rem; }
 }
+
+/* Let the main content stretch */
+.second-block .info,
+.second-block .info .info-content {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;            /* remove auto-centering */
+}
+
+/* Make each card use full line width */
+.info-content .card {
+  max-width: none !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Inside the card, keep the year narrow and text wide */
+.card .col-md-3 { flex: 0 0 18%; max-width: 18%; }
+.card .col-md-9 { flex: 0 0 82%; max-width: 82%; }
+
+/* On small screens, stack nicely */
+@media (max-width: 767.98px) {
+  .card .col-md-3,
+  .card .col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Optional: reduce extra inner padding if it makes it feel “narrow” */
+.card-body { padding-right: 2rem; }
