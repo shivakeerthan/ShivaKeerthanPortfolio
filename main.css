@@ -565,3 +565,43 @@ a i {
     max-width: 100%;
   }
 }
+/* Add this CSS to your main.css file */
+
+/* Logo styles */
+.navbar-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Makes it circular if you want */
+  object-fit: cover; /* Ensures proper image scaling */
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Alternative rectangular logo style */
+.navbar-logo-rect {
+  height: 28px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo-rect:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive logo */
+@media (max-width: 575.98px) {
+  .navbar-logo {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .navbar-logo-rect {
+    height: 24px;
+    max-width: 100px;
+  }
+}
