@@ -23,21 +23,41 @@
     
   </head>
   <body class="bg-dark-ink">
-    <!-- Header -->
+    <!-- Header - Updated to match index.html -->
     <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
       <div class="container-fluid px-3">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <span class="logo-dot me-2"></span>
-          <span>Shiva Keerthan Jalla</span>
+          <img src="logo.png" alt="Logo" class="navbar-logo me-2">
         </a>
-        
-        <div class="ms-auto d-flex flex-wrap gap-2">
-          <a class="btn btn-outline-info btn-sm" href="index.html">
-            <i class="fas fa-arrow-left me-1"></i>Back to Portfolio
-          </a>
-          <button class="btn btn-info btn-sm" onclick="window.print()">
-            <i class="fas fa-download me-1"></i>Download PDF
-          </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="topNav">
+          <ul class="navbar-nav mx-auto align-items-lg-center nav-centered">
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="index.html#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="index.html#academic-work">Academic Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="index.html#academics">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn resume-btn active" href="resume.html">Resume</a>
+            </li>
+          </ul>
+          
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-info btn-sm" onclick="window.print()">
+              <i class="fas fa-download me-1"></i>Download PDF
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -361,5 +381,21 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+              navbarCollapse.classList.remove('show');
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
