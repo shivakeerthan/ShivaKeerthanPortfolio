@@ -39,10 +39,13 @@
               <a class="nav-link nav-btn" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="#work">Work</a>
+              <a class="nav-link nav-btn" href="#work">Work Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-btn" href="#academic-work">Academic Work</a>
+              <a class="nav-link nav-btn" href="#academic-work">Academic Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-btn" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-btn" href="#academics">Academics</a>
@@ -134,12 +137,12 @@
                 <!-- Current Role -->
                 <div class="experience-card scroll-slide">
                   <div class="card-timeline">
-                    <div class="timeline-date">June 2023 — Present</div>
+                    <div class="timeline-date">June 2023 – Present</div>
                   </div>
                   <div class="card-content">
                     <h4 class="position-title">Data Scientist II</h4>
                     <h5 class="company-name">Dell Technologies</h5>
-                    
+                    <p> Led an LLM recommendation engine and a RAG knowledge base that cut prep time 60 percent and rep search 90 percent while improving forecast precision 7 percent.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Large Language Models (LLMs)</span>
                       <span class="skill-tag">Python</span>
@@ -157,12 +160,12 @@
                 <!-- Internship -->
                 <div class="experience-card scroll-slide">
                   <div class="card-timeline">
-                    <div class="timeline-date">May 2022 — Aug 2022</div>
+                    <div class="timeline-date">May 2022 – Aug 2022</div>
                   </div>
                   <div class="card-content">
                     <h4 class="position-title">Data Scientist Intern</h4>
                     <h5 class="company-name">Dell Technologies</h5>
-                    
+                    <p>Revamped a conversational AI stack with embeddings and custom transformers, lowering rep lookup time 60 percent and cutting duplicate queries 70 percent.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Natural Language Processing (NLP)</span>
                       <span class="skill-tag">Transformer Model Training & Customization</span>
@@ -176,12 +179,12 @@
                 <!-- Accenture -->
                 <div class="experience-card scroll-slide">
                   <div class="card-timeline">
-                    <div class="timeline-date">Oct 2020 — July 2021</div>
+                    <div class="timeline-date">Oct 2020 – July 2021</div>
                   </div>
                   <div class="card-content">
                     <h4 class="position-title">Data Engineer</h4>
                     <h5 class="company-name">Accenture</h5>
-                    
+                    <p>Productionized ADF and PySpark ETL with normalized models and BI dashboards, reducing delivery time 70 percent and informing 5 to 10 percent ad spend reallocation.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Cloud Data Engineering</span>
                       <span class="skill-tag">ETL Pipeline Design & Reusable Frameworks</span>
@@ -214,7 +217,7 @@
                   <div class="card-content">
                     <h4 class="position-title">Graduate Teaching Assistant</h4>
                     <h5 class="company-name">Mathematics for Data Models</h5>
-                    
+                    <p>Designed and graded assessments across linear algebra, probability and optimization, and supported 150 students with weekly office hours.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Linear Algebra</span>
                       <span class="skill-tag">Probability</span>
@@ -232,7 +235,7 @@
                   <div class="card-content">
                     <h4 class="position-title">Graduate Teaching Assistant</h4>
                     <h5 class="company-name">Machine Learning and Data Mining</h5>
-                    
+                    <p>Co-designed labs for supervised and unsupervised learning and hosted 170 plus hours of support for 60 students.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Scikit-learn</span>
                       <span class="skill-tag">Feature Engineering</span>
@@ -250,12 +253,296 @@
                   <div class="card-content">
                     <h4 class="position-title">Graduate Teaching Assistant</h4>
                     <h5 class="company-name">Intermediate Programming with Data</h5>
-                    
+                    <p>Led labs on data wrangling, analysis and visualization for 150 students and mentored on testing and documentation.</p>
                     <div class="skills-container">
                       <span class="skill-tag">Pandas</span>
                       <span class="skill-tag">Data Wrangling</span>
                       <span class="skill-tag">Visualization</span>
                       <span class="skill-tag">Testing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section scroll-fade">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="section-header text-center mb-5">
+                <h3 class="section-title">Projects</h3>
+                <p class="section-subtitle">Data science and machine learning projects</p>
+                <button class="btn toggle-btn mt-3" onclick="toggleProjects()">
+                  <span id="toggle-text">Show Projects</span>
+                  <i id="toggle-icon" class="fas fa-chevron-down ms-2"></i>
+                </button>
+              </div>
+              
+              <div id="projects-content" class="projects-content collapsed">
+                <div class="projects-grid">
+                  <!-- ANZ Bank Project -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Australia and New Zealand Banking Group ANZ</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Identify target segments from ANZ transaction data.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Performed EDA, clustering, and regression in notebooks with a small Python script.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Visualizations, engineered features, and a short insights deck.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sprocket Central Project -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Sprocket Central Customer Segmentation</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Segment new customers to improve sales efficiency.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Ran EDA and clustering with customer profiles in notebooks.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Segment definitions and presentation-ready recommendations.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Temperature Forecasting -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Temperature Forecasting</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Forecast Indian temperatures from 2004 to 2015.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Prepared time series and tested baseline forecasting models in a notebook.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Cleaned series, predictions, and quick evaluation metrics.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Oil Price Prediction -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Oil Price Prediction</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Predict India oil prices using Dubai export prices as a driver.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Compared linear, polynomial, SVR, RBF, and random forest models.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Modular scripts and a README with run steps and results.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Disaster Tweets Classification -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Disaster Tweets Classification</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Detect whether a tweet describes a real disaster.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Built NLP preprocessing and a baseline classifier in a notebook.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Reproducible code and a simple metrics summary.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- House Price Prediction -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">House Price Prediction</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Predict house sale prices for a Kaggle task.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Engineered features and trained gradient boosting and regression models.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Notebook with model comparison and key takeaways.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PySpark on Azure Databricks -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">PySpark on Azure Databricks</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Run scalable exploratory data analysis.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Used PySpark on Databricks for schema exploration, aggregations, and visuals.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Reproducible Spark notebook showcasing the workflow.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Geo-spatial Location Clustering -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Geo-spatial Location Clustering</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Cluster neighborhoods from location provider data.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Processed data and ran clustering across a multi-notebook pipeline.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Clustering artifacts and a concise capstone writeup.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Walmart Analysis -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Walmart Analysis</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Explore trends in a retail dataset.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Cleaned data and built charts in R Markdown.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Knit-ready Rmd with summary visuals and stats.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Energy Consumption Prediction -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/energy-consumption.png" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Energy Consumption Prediction</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Predict building energy use to guide HVAC decisions.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Trained XGBoost, LightGBM, linear, and CatBoost with weather and metadata.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Notebook, sample data files, and a clear README.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Titanic Machine Learning -->
+                  <div class="project-card scroll-slide">
+                    <div class="project-image">
+                      <img src="images/anz-bank-project.jpg" alt="ANZ Bank Data Analysis" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                      <h4 class="project-title">Titanic Machine Learning</h4>
+                      <div class="project-details">
+                        <div class="project-item">
+                          <span class="project-label">Goal:</span>
+                          <span class="project-text">Predict survival for Titanic passengers.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Work:</span>
+                          <span class="project-text">Built a baseline pipeline with feature processing and classifiers.</span>
+                        </div>
+                        <div class="project-item">
+                          <span class="project-label">Outputs:</span>
+                          <span class="project-text">Reproducible notebook and leaderboard-ready predictions.</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -453,6 +740,37 @@
           });
         }
       });
+
+      // Toggle Projects Function
+      function toggleProjects() {
+        const content = document.getElementById('projects-content');
+        const toggleText = document.getElementById('toggle-text');
+        const toggleIcon = document.getElementById('toggle-icon');
+        
+        if (content.classList.contains('collapsed')) {
+          content.classList.remove('collapsed');
+          content.classList.add('expanded');
+          toggleText.textContent = 'Hide Projects';
+          toggleIcon.classList.remove('fa-chevron-down');
+          toggleIcon.classList.add('fa-chevron-up');
+          
+          // Trigger scroll animations for project cards
+          setTimeout(() => {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.add('visible');
+              }, index * 100);
+            });
+          }, 300);
+        } else {
+          content.classList.remove('expanded');
+          content.classList.add('collapsed');
+          toggleText.textContent = 'Show Projects';
+          toggleIcon.classList.remove('fa-chevron-up');
+          toggleIcon.classList.add('fa-chevron-down');
+        }
+      }
     </script>
   </body>
 </html>
